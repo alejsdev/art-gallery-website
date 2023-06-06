@@ -20,25 +20,38 @@ h1,
 h2,
 h3 {
   font-family: "Big Shoulders Display", cursive;
+  margin: 0;
+  padding: 0.4em 0.3em;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 60px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0.5em 0.2em;
+  font-size: 4rem;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  padding: 1em 0.5em;
 }
 
 p {
   font-family: "Outfit", sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
   margin: 0;
   line-height: 30px;
+  padding: 0 1em;
 }
 
-.intro p {
-  padding: 0 1em;
+button {
+  color: var(--main-white-color);
+  text-transform: uppercase;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 /* Layout */
@@ -47,23 +60,87 @@ section {
   height: 100vh;
 }
 
+/* Intro section */
+
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-.black {
-  display: none;
-}
-
 .image {
-  background-image: url("./assets/desktop/image-hero.jpg");
+  background-image: url("./assets/mobile/image-hero@2x.jpg");
   background-size: cover;
   background-position: center;
   height: 30%;
 }
 
+button {
+  border: none;
+  background-color: var(--main-black-color);
+  padding: 1em 4em 1em 1.5em;
+  margin: 1.5em 0.8em;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow-right {
+  background-color: var(--main-orange-color);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0em 1em;
+}
+
+/* Main section */
+.image,
+.image-1,
+.image-2,
+.image-3 {
+  background-size: cover;
+  background-position: center;
+}
+
+.image-1 {
+  background-image: url(assets/mobile/image-grid-1@2x.jpg);
+  height: 50%;
+  margin: 1em;
+}
+
+.image-2 {
+  background-image: url(assets/mobile/image-grid-2@2x.jpg);
+  height: 60%;
+  margin: 1em;
+}
+
+.image-3 {
+  background-image: url(assets/mobile/image-grid-3@2x.jpg);
+  height: 40%;
+  margin: 1em;
+}
+
+.container-black {
+  background-color: var(--main-black-color);
+  color: var(--main-white-color);
+  height: 50%;
+  margin: 2em;
+}
+
 footer {
   background-color: var(--main-black-color);
+  color: var(--main-white-color);
+  font-size: 2rem;
+}
+
+.social-media {
+  padding: 2em 1em;
+  display: flex;
+  gap: 20px;
+}
+
+i {
+    font-size: 1.5rem;
 }
