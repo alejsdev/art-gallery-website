@@ -1,0 +1,69 @@
+/* Variables */
+
+:root {
+  --main-black-color: #151515;
+  --main-grey-color: #444444;
+  --main-white-color: #ffffff;
+  --main-orange-color: #d5966c;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Mobile first */
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.5em 0.2em;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.intro p {
+  padding: 0 1em;
+}
+
+/* Layout */
+
+section {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.black {
+  display: none;
+}
+
+.image {
+  background-image: url("./assets/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30%;
+}
+
+footer {
+  background-color: var(--main-black-color);
+}
