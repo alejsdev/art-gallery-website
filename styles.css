@@ -59,6 +59,7 @@ button {
   font-family: "Outfit", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
 i {
@@ -278,10 +279,7 @@ footer {
 
   .image {
     grid-column: 1 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
+    border-radius: 0px;
     padding: 20px;
     background: linear-gradient(
         to right,
@@ -296,6 +294,7 @@ footer {
   }
 
   .location > p {
+    max-width: 25%;
     position: absolute;
     top: 30%;
     left: 60%;
@@ -303,8 +302,9 @@ footer {
 
   .location > button {
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 60%;
+    margin: 0;
   }
 
   .text {
@@ -323,21 +323,32 @@ footer {
   }
 
   section:nth-of-type(2) {
+    width: 70%;
+    height: 400px;
     grid-template-columns: 1fr 1fr;
-    margin-top: 2em;
-  }
-
-  .image-1 {
-    background-image: url(assets/desktop/image-grid-1@2x.jpg);
-    margin: 0 2em;
-  }
-
-  section:nth-of-type(3) {
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4em auto 0 auto;
   }
 
   .content-a {
     width: 60%;
+    margin: 0;
+  }
+
+  h2,
+  p {
+    padding: 0.5em 0;
+  }
+
+  .image-1 {
+    background-image: url(assets/desktop/image-grid-1@2x.jpg);
+    margin: 0;
+  }
+
+  section:nth-of-type(3) {
+    width: 70%;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto 4em auto;
   }
 
   .image-2 {
@@ -355,6 +366,17 @@ footer {
   .content-b {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    height: 100%;
+  }
+
+  .content-b > * {
+    padding: 1.5rem;
+  }
+
+  footer {
+    justify-content: space-evenly;
+  }
+
+  footer > p {
+    width: 40%;
   }
 }
